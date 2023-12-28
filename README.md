@@ -6,4 +6,4 @@ Redesign einer Restaurant Website vom Design bis hin zum Code. Dies ist kein Auf
 
 **Arbeitszeit:**
 - Design mit Figma: 4 Stunden
-- Programmieren: [Hier kannst du die tatsächliche Arbeitszeit einfügen]
+- Programmieren: in Arbeit
