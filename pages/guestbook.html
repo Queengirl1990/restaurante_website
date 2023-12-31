@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Gästebuch</title>
+    <script src="../scripts/script.js"></script>
+    <form id="guestbookForm" action="../scripts/guestbook.php" method="POST">
+    </form>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="Home">Home</a>
+            <a href="news.html" class="Aktuelles">Aktuelles</a>
+            <a href="menu/drinks.html" class="Speisekarte">Speisekarte</a>
+            <a href="story.html" class="Geschichte">Geschichte</a>
+            <a href="guestbook.html" class="GStebuch">Gästebuch</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="guestbook-container">
+            <h2 class="heading">Gästebuch</h2>
+
+            <!-- Hier beginnt die Tabelle für die Gästebucheinträge -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Kommentar</th>
+                        <th>Datum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Beispiel für einen Gästebucheintrag -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Ein toller Aufenthalt! Ich komme wieder.</td>
+                        <td>01. Januar 2023</td>
+                    </tr>
+                    <!-- Weitere Einträge hier -->
+                </tbody>
+            </table>
+            <!-- Ende der Tabelle -->
+
+            <!-- Gästebucheintrag-Formular -->
+            <form id="guestbookForm" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comment">Kommentar:</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="button" onclick="submitEntry()">Eintragen</button>
+            </form>
+
+            <!-- Popup-Bereich -->
+            <div id="popup" class="popup">
+                <p>Nachricht erfolgreich gesendet!</p>
+                <button onclick="closePopup()">Schließen</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#" class="Rundgang">Rundgang</a>
+            <a href="#" class="Kontakt">Kontakt</a>
+            <a href="#" class="Anfahrt">Anfahrt</a>
+            <a href="#" class="Impressum">Impressum</a>
+        </nav>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+
+</html>
