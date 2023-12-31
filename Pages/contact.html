@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="home.html" class="Home">Home</a>
             <a href="news.html" class="Aktuelles">Aktuelles</a>
             <a href="menu/drinks.html" class="Speisekarte">Speisekarte</a>
@@ -21,23 +21,27 @@
 
     <main>
         <div style="justify-content: space-evenly; display: flex;">
-            <div class="contakt" id="contakt">
-                <div>
-                    <h2 class="heading contact">Kontakt - <span>Formular</span></h2>
+            <div class="contact-container">
+                <div class="image-container">
+                    <img src="../assets/images/contact.png" alt="Kontaktbild">
                 </div>
-                <div>
-                    <form action="#" method="POST">
-                        <div class="input-box">
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="email" name="email" placeholder="Email">
-                        </div>
-                        <textarea name="message" placeholder="Nachricht"></textarea>
-                        <button class="cta" type="submit">
-                            <span class="hover-underline-animation">Send Message</span>
-                        </button>
-                    </form>
+                <div class="contakt" id="contakt">
+                    <div>
+                        <h2 class="heading contact">Kontakt - <span>Formular</span></h2>
+                    </div>
+                    <div>
+                        <form action="#" method="POST">
+                            <div class="input-box">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <textarea name="message" placeholder="Nachricht"></textarea>
+                            <button class="cta" type="submit">
+                                <span class="hover-underline-animation">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
     </main>
 
     <footer>
