@@ -5,7 +5,7 @@ function submitEntry() {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "../scripts/guestbook.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
+    //Gästebuch einträge speichern
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
