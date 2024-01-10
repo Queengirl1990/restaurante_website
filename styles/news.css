@@ -20,7 +20,8 @@ body {
 
 header {
     background-color: var(--bg-color);
-    padding: 2%;
+    padding: 4%;
+    /* Erhöhe die Headerhöhe auf 4% */
     text-align: center;
 }
 
@@ -39,7 +40,6 @@ header nav a {
 .navbar a {
     font-size: 1.8rem;
     color: var(--second-bg-color);
-    /* Textfarbe */
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -54,19 +54,16 @@ header nav a {
 main {
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 20px;
+    padding: 0px;
     display: flex;
     align-items: flex-start;
 }
 
-.logo-container {
+.more {
+    color: var(--text-color);
+    padding: 20px;
     display: flex;
-    align-items: center;
-}
-
-.logo-container img {
-    margin-right: 20px;
-    margin-top: 20px;
+    align-items: flex-start;
 }
 
 .text-container {
@@ -75,7 +72,25 @@ main {
     line-height: 1.5;
 }
 
-/* FOOTER */
+.redesign-container {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    padding: 20px;
+}
+
+.redesign-container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    order: -1;
+    border-radius: 20px;
+}
+
+.text-container {
+    flex-grow: 1;
+    line-height: 1.5;
+}
 
 footer {
     position: absolute;
@@ -112,5 +127,19 @@ footer a:hover {
 
     main {
         flex-direction: column;
+    }
+
+    .redesign-container {
+        width: 100%;
+    }
+
+    .redesign-container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        order: 0;
+    }
+
+    .text-container {
+        max-width: 100%;
     }
 }
