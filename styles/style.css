@@ -59,9 +59,18 @@ main {
     align-items: flex-start;
 }
 
+/* more nur in news */
+.more {
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .logo-container img {
@@ -118,95 +127,6 @@ footer a:hover {
 .text-container {
     flex-grow: 1;
     line-height: 1.5;
-}
-
-/* Kontaktformular */
-
-.contact-container {
-    display: flex;
-    align-items: flex-start;
-}
-
-.image-container {
-    flex-shrink: 0;
-    margin-right: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.contakt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contakt h2 {
-    margin-bottom: 3rem;
-    padding: 20px;
-}
-
-.contakt form {
-    max-width: 70rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contakt form .input-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contakt form .input-box input,
-.contakt form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: #fff;
-    border: 2px solid #ccc;
-    border-radius: .8rem;
-    margin: 1rem 0;
-    resize: none;
-    box-sizing: border-box;
-}
-
-.contakt form .input-box input:last-child {
-    margin-right: 0;
-}
-
-.contakt form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 2.0rem;
-    color: var(--text-color);
-    background: #fff;
-    border-radius: .8rem;
-    margin: 1rem 0;
-    resize: none;
-}
-
-.cta {
-    border: 2px solid var(--second-bg-color);
-    background-color: var(--second-bg-color);
-    color: var(--bg-color);
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 0.8rem;
-}
-
-.cta:hover {
-    background-color: var(--bg-color);
-    color: var(--second-bg-color);
 }
 
 @media only screen and (max-width: 768px) {
