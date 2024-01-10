@@ -33,6 +33,11 @@ header nav a {
     font-size: 18px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: start;
+}
+
 .navbar a {
     font-size: 1.8rem;
     color: var(--second-bg-color);
@@ -303,4 +308,54 @@ button:hover {
 .popup button {
     padding: 10px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    header nav a {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .redesign-container {
+        width: 100%;
+    }
+
+    .redesign-container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        order: 0;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contakt h2 {
+        margin-bottom: 1rem;
+    }
+
+    .contakt form {
+        max-width: 100%;
+    }
+
+    .popup {
+        width: 80%;
+    }
 }
