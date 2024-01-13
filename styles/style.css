@@ -84,6 +84,13 @@ main {
     line-height: 1.5;
 }
 
+.text-container .opening-hours .day {
+    display: inline-block;
+    /* Stellt sicher, dass die Tage auf einer Linie sind */
+    width: 200px;
+    /* Passe die Breite nach Bedarf an */
+}
+
 /* FOOTER */
 
 footer {
