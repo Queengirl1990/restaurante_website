@@ -63,7 +63,7 @@ header nav a {
     display: flex;
     padding: 30px;
     align-items: flex-start;
-    height: 100vh;
+    height: 30vh;
 }
 
 .room-container img {
@@ -73,8 +73,8 @@ header nav a {
     margin-top: 20px;
 }
 
-.text-container {
-    flex-grow: 0;
+.text-container-rundgang {
+    /* flex-grow: 0; */
     max-width: 650px;
     line-height: 1.5;
     padding: 40px;
