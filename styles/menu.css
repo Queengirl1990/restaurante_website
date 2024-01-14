@@ -24,8 +24,9 @@ body {
 
 header {
     background-color: var(--bg-color);
-    padding: 4%;
+    padding: 3%;
     text-align: center;
+    width: 100%;
 }
 
 header nav a {
@@ -56,38 +57,60 @@ header nav a {
 
 .main-container {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 20px;
+    padding: 3%;
+    margin-left: 1%;
 }
 
 .button {
     border-radius: 20px;
     background: #F3F3F3;
-    box-shadow: 11px 11px 12px #c5c5c5, -11px -11px 12px #ffffff;
+    box-shadow: -5px 5px 10px #8c7c79,
+        5px -5px 10px #766866;
     padding: 10px 20px;
-    /* Feste Größe für die Buttons anpassen */
     margin: 5px;
-    /* Optional: Abstand zwischen den Buttons anpassen */
+    /* Abstand zwischen den Buttons anpassen */
     cursor: pointer;
     border: none;
+    width: 100%;
 }
 
 
 .button.active {
     background: linear-gradient(145deg, #766866, #8c7c79);
-    box-shadow: 11px 11px 12px #6a5e5c, -11px -11px 12px #9c8a86;
-    color: white;
+    box-shadow: -5px 5px 10px #645856,
+        5px -5px 10px #a2908c;
 }
 
 .button:hover {
     background: linear-gradient(145deg, #766866, #8c7c79);
     box-shadow: 11px 11px 12px #6a5e5c, -11px -11px 12px #9c8a86;
     color: white;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.text-container-rundgang {
+    max-width: 60%;
 }
 
 footer {
