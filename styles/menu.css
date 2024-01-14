@@ -1,0 +1,128 @@
+:root {
+    --bg-color: #F3F3F3;
+    --second-bg-color: rgba(131, 116, 113, 0.9);
+    --text-color: #646464;
+    --footer-color: #837471;
+    --warning-color: #CB3201;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: var(--second-bg-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--bg-color);
+    padding: 4%;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--second-bg-color);
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+}
+
+.main-container {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.button {
+    border-radius: 20px;
+    background: #F3F3F3;
+    box-shadow: 11px 11px 12px #c5c5c5, -11px -11px 12px #ffffff;
+    padding: 10px 20px;
+    /* Feste Größe für die Buttons anpassen */
+    margin: 5px;
+    /* Optional: Abstand zwischen den Buttons anpassen */
+    cursor: pointer;
+    border: none;
+}
+
+
+.button.active {
+    background: linear-gradient(145deg, #766866, #8c7c79);
+    box-shadow: 11px 11px 12px #6a5e5c, -11px -11px 12px #9c8a86;
+    color: white;
+}
+
+.button:hover {
+    background: linear-gradient(145deg, #766866, #8c7c79);
+    box-shadow: 11px 11px 12px #6a5e5c, -11px -11px 12px #9c8a86;
+    color: white;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-color);
+    color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--bg-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--second-bg-color);
+}
+
+@media only screen and (max-width: 768px) {
+    header nav a {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+}
